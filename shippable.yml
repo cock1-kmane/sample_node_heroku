@@ -8,12 +8,12 @@ node_js:
 
 env:
   global:
-    - APP_NAME=samplenode-heroku
+    - APP_NAME=rc-test
     #- secure: VmFjAxSZ44Ew/po4EVQheH1ybrbL3O68v6rDC7cgAjVVd0YWlryaeSX/qNtIaXUxqdNLA1tD4OdbB7bXhOeMElihHqchazpaDT5YlGhYqPDob68J6ikFf4Y+1sHuuC2BZT4jIm40aeYUrmwerh3WpvXhU973DpikXCggg7N305KBWHrJKR86SKzgcOyM+6AbmOfT4CRqArJACJ4kEdNOy30V2uKVMKQJqIzrDowges2UlcubxpU+gISAG8tHM6nQf8HcZYi+6kIryXaUe8kULkjHFwK0vrZxHCkDgcVTW81li0eVqS3h9kIE3Oz+dI1IBY+RS62NhA8mNr4B+ffpHg==
-    - secure: kq4oX2aznlKa5AnIY0AtdzlYfAbAi13GVj3VGigxsUPTflhtSnunqfJ5/lPhzkdcIhVeGdUBoKqwW5LqtFQFPD1BwtMU0KArZNBnyf4CcDEdGuIWyrbnkzcatVnXd6NUWV2lcT/CLzS6g1xx6VAbqSdFg6c12Ak7ktyCIaRXWVH6CFEtozqr3zKXvD6uOMlUvy5RbthQfn/zjhL28iyePCbehQ+aqmlGAryByRnq1LuWN3Sofo8idYEddFMEjm48V9pfhLo6CQMS3ZFr3rJTKMymX/r0xxCQDwVnSaKs6IRYzJ7GukV7EjzWcCEwVfITMFf6VHYMC4/ga90cyhmWzA==
-    #BETA HEROKU_API_KEY=a956ef68-1e3a-4ba9-a974-0c1102f26acf
-  matrix:
-    - M1=ONE
+    - secure: muYP42QYUSJbLymPTqRjdcNhrs1aq+yPB0xXhN7HMgw2ohJCQOwV4tE5JoFRT+DlLBFxzjYu4s/FWl9cwsp8O+cvk0CYTNhA0OxyZDbUpOjE3z+a6uRRgi0xxAFOdTNqIIaT6pxl4wDll6vd2Dq0iyJFjfDPaUneffLoCk4V0/joOjgVljaDFmTS4YkRgU3VXmWjUfp/qPWeA1jMvvS1ZQYd+/JuT/QSmGNsifqDXZvOCrEobk5hCs/e0JoHzkCVagGWUARt12YMsttgtTneftyvUoBN4LERyYIggMbHViYJ1Q85THZMyLKpJWQK1opEUXs8uvnz0jCBQ00Mc77Mlw==
+    #Rc HEROKU_API_KEY=a956ef68-1e3a-4ba9-a974-0c1102f26acf
+  #matrix:
+    #- M1=ONE
   
 build:
 
