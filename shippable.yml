@@ -6,6 +6,11 @@ node_js:
   - 0.12
   - 5
 
+branches:
+  except: 
+    - master
+  only:
+    - dup-withttoolbelt
 env:
   global:
     - APP_NAME=rc-test
