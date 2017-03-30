@@ -19,6 +19,8 @@ build:
   ci:
     - ps -eax
     - ls -al
+    
+  on_success:
     - git push -f git@heroku.com:$APP_NAME.git master 
   #  - git push -f heroku $BRANCH:master    
   
