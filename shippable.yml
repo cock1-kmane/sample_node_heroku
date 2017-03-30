@@ -9,8 +9,8 @@ node_js:
 env:
   global:
     - APP_NAME=rc-test
-    - secure: fX+iW5+AhsCua9/VIq301bZMBxMa/TpI1TjfzgaWuRKAR4yS0/fOi8Rf0GBHI6G84UgWEOS4IVqk4IxyT0auKWNTBvf3KIHiX2PiMT+/qo/YEejID+r2aJRSS/yH4T2dDzSiVCuAVP40zloa6cdwpLuTEo49Z2eh+uao3hUA+u5vIkXAK0zlEyI92g3EHZ25FV+SbeIfP3qegXdOwlxsF6AEjaRk9fnQV9W47ehlMCWftW7FRBPfaV+WPfVOIPLi6KmDAxOdc2eJOQayjT9PxrCFoKgGUGBa9Xvz/FbSX6nMRaJrc+aBA750ceqY3pD2kYkX3T4cU3irw9JO2xoiFw==
-  
+    - secure: b7TrAGUJHpmAWUwriUPDqVXwvvrRq5wHN7/RfXZDznlWP8OEqTzC2/zUG9XpUqFiWk5o+K3KDx8o11bqaigbAR6vLvErtYs/afdxTF1+Y6+5ePjv12mCP57sqw0VRU3sbKaWpphm9rSNlgEAktmLzFNyVCXAjued3H6fE8TecXSw8AvI7E8uEqQz309GqzcQHpjTBVht9vc4OWDwLMvV+zrPMvB3a2zk9Uhxi7UFL4lvqTJDcNujvhLCUtYcMCcWX0nFn150GZoq8cGb4cukHpDJDPiTYWAxluvfD2QdIoRKpLyEYp6/gUaJRf316H8S12OyZ39QE7yTDEQh6V2BJw==
+    #prod 
 build:
 
   ci:
