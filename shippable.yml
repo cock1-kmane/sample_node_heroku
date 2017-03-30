@@ -4,16 +4,12 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 5
+ # - 5
 
 env:
   global:
     - APP_NAME=rc-test
-    #- secure: VmFjAxSZ44Ew/po4EVQheH1ybrbL3O68v6rDC7cgAjVVd0YWlryaeSX/qNtIaXUxqdNLA1tD4OdbB7bXhOeMElihHqchazpaDT5YlGhYqPDob68J6ikFf4Y+1sHuuC2BZT4jIm40aeYUrmwerh3WpvXhU973DpikXCggg7N305KBWHrJKR86SKzgcOyM+6AbmOfT4CRqArJACJ4kEdNOy30V2uKVMKQJqIzrDowges2UlcubxpU+gISAG8tHM6nQf8HcZYi+6kIryXaUe8kULkjHFwK0vrZxHCkDgcVTW81li0eVqS3h9kIE3Oz+dI1IBY+RS62NhA8mNr4B+ffpHg==
-    - secure: muYP42QYUSJbLymPTqRjdcNhrs1aq+yPB0xXhN7HMgw2ohJCQOwV4tE5JoFRT+DlLBFxzjYu4s/FWl9cwsp8O+cvk0CYTNhA0OxyZDbUpOjE3z+a6uRRgi0xxAFOdTNqIIaT6pxl4wDll6vd2Dq0iyJFjfDPaUneffLoCk4V0/joOjgVljaDFmTS4YkRgU3VXmWjUfp/qPWeA1jMvvS1ZQYd+/JuT/QSmGNsifqDXZvOCrEobk5hCs/e0JoHzkCVagGWUARt12YMsttgtTneftyvUoBN4LERyYIggMbHViYJ1Q85THZMyLKpJWQK1opEUXs8uvnz0jCBQ00Mc77Mlw==
-    #Rc HEROKU_API_KEY=a956ef68-1e3a-4ba9-a974-0c1102f26acf
-  #matrix:
-    #- M1=ONE
+    - secure: fX+iW5+AhsCua9/VIq301bZMBxMa/TpI1TjfzgaWuRKAR4yS0/fOi8Rf0GBHI6G84UgWEOS4IVqk4IxyT0auKWNTBvf3KIHiX2PiMT+/qo/YEejID+r2aJRSS/yH4T2dDzSiVCuAVP40zloa6cdwpLuTEo49Z2eh+uao3hUA+u5vIkXAK0zlEyI92g3EHZ25FV+SbeIfP3qegXdOwlxsF6AEjaRk9fnQV9W47ehlMCWftW7FRBPfaV+WPfVOIPLi6KmDAxOdc2eJOQayjT9PxrCFoKgGUGBa9Xvz/FbSX6nMRaJrc+aBA750ceqY3pD2kYkX3T4cU3irw9JO2xoiFw==
   
 build:
 
@@ -24,6 +20,5 @@ build:
     
   on_success:
     - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/00_sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
-   # - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
     - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
     - git push -f heroku $BRANCH:master 
