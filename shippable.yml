@@ -18,6 +18,8 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - echo $M1
+    - echo $APP_NAME
     - git push -f git@heroku.com:$APP_NAME.git master 
   #  - git push -f heroku $BRANCH:master    
   
